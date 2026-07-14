@@ -35,16 +35,17 @@ class Program
         }
 
         // Show the average
+        Console.WriteLine();
         Console.WriteLine($"Your grade is: {letter}");
 
         // Determine whether or not you passed the class
         if (grade >= 70)
         {
-            Console.WriteLine("Congratulations! You passed the course.");
+            Console.WriteLine("- Congratulations! You passed the course.");
         }
         else
         {
-            Console.WriteLine("Don't give up! Keep trying for next time.");
+            Console.WriteLine("- Don't give up! Keep trying for next time.");
         }
 
 
