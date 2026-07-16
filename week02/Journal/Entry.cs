@@ -10,6 +10,13 @@ public class Entry
 
     public void Display()
     {
-        // For now, I'll leave this blank
+        Console.WriteLine($"Date: {_date} - Prompt: {_promptText}");
+        Console.WriteLine($"{_entryText}");
+        Console.WriteLine();
+    }
+
+    public string GetFormattedString()
+    {
+        return $"{_date}|{_promptText}|{_entryText}";
     }
 }
