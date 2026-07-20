@@ -1,3 +1,8 @@
+// I added a welcome message and clear instructions explaining how the program works.
+// I added a loop that allows the user to practice again with a different scripture passage  if desired..
+// I implemented smart word hiding to select only those words that are not hidden.
+
+
 using System;
 
 class Program
