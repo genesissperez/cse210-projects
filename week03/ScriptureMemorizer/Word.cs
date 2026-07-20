@@ -9,27 +9,35 @@ public class Word
 
     public Word(string text)
     {
-        // Empty for now
+        _text = text;
+        _isHidden = false;
     }
 
 
     public void Hide()
     {
-        // Empty 
+        _isHidden = true;
     }
 
     public void Show()
     {
-        //  Empty 
+        _isHidden = false;
     }
 
     public bool IsHidden()
     {
-        return false;
+        return _isHidden;
     }
 
     public string GetDisplayText()
     {
-        return ""; // Returns an empty string 
+        if (_isHidden)
+        {
+            return new string('_', _text.Length);
+        }
+        else
+        {
+            return _text;
+        }
     }
 }

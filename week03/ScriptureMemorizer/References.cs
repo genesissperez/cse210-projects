@@ -9,21 +9,34 @@ public class Reference
     private int _endVerse;
 
 
-
+    //for when the passage consists of only one verse
     public Reference(string book, int chapter, int verse)
     {
-        // empty for now
+        _book = book;
+        _chapter = chapter;
+        _verse = verse;
+        _endVerse = verse;
     }
 
     // Verse Builder
     public Reference(string book, int chapter, int startVerse, int endVerse)
     {
-        // empty for now
+        _book = book;
+        _chapter = chapter;
+        _verse = startVerse;
+        _endVerse = endVerse;
     }
 
 
     public string GetDisplayText()
     {
-        return ""; // Returns an empty string
+        if (_verse == _endVerse)
+        {
+            return $"{_book} {_chapter}:{_verse}";
+        }
+        else
+        {
+            return $"{_book} {_chapter}:{_verse}-{_endVerse}";
+        }
     }
 }
