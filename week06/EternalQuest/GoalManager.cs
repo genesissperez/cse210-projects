@@ -29,7 +29,7 @@ public class GoalManager
             Console.WriteLine("\nMenu Options:");
             Console.WriteLine("  1. Create a new goal");
             Console.WriteLine("  2. List goals");
-            Console.WriteLine("  3. Meet goals");
+            Console.WriteLine("  3. Save goals");
             Console.WriteLine("  4. Load Goals");
             Console.WriteLine("  5. Register Event");
             Console.WriteLine("  6. Quit");
@@ -112,7 +112,7 @@ public class GoalManager
 
     public void ListGoalNames()
     {
-        Console.WriteLine("Las metas son:");
+        Console.WriteLine("The goals are:");
         for (int i = 0; i < _goals.Count; i++)
         {
             Console.WriteLine($"{i + 1}. {_goals[i].GetShortName()}");
